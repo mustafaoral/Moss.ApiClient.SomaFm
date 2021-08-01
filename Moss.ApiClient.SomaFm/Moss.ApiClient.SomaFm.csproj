@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <PackageId>Moss.ApiClient.SomaFm</PackageId>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Authors>Mustafa Oral</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/mustafaoral/Moss.ApiClient.SomaFm</RepositoryUrl>
+    <Title>Moss.ApiClient.SomaFm</Title>
+    <PackageDescription>An API client for Soma FM.</PackageDescription>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="$(AssemblyName).Test" />
+  </ItemGroup>
+
+</Project>

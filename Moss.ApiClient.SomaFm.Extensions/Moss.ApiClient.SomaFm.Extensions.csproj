@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <PackageId>Moss.ApiClient.SomaFm.Extensions</PackageId>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <Authors>Mustafa Oral</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/mustafaoral/Moss.ApiClient.SomaFm</RepositoryUrl>
+    <Title>Moss.ApiClient.SomaFm.Extensions</Title>
+    <PackageDescription>Extensions for Soma FM API Client.</PackageDescription>
+    <NeutralLanguage>en-GB</NeutralLanguage>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Moss.ApiClient.SomaFm\Moss.ApiClient.SomaFm.csproj" />
+  </ItemGroup>
+
+</Project>

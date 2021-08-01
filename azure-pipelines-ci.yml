@@ -1,0 +1,24 @@
+name: $(Date:yyyy-MM-dd)$(Rev:.rr)
+
+pool:
+  vmImage: windows-2019
+
+trigger:
+  branches:
+    exclude:
+      - master
+
+jobs:
+  - job: build_and_test
+    displayName: build and test
+    steps:
+      - task: DotNetCoreCLI@2
+        displayName: dotnet build
+        inputs:
+          command: build
+          arguments: --configuration Release --verbosity normal
+      - task: DotNetCoreCLI@2
+        displayName: dotnet test
+        inputs:
+          command: test
+          arguments: --no-build --configuration Release --verbosity normal
