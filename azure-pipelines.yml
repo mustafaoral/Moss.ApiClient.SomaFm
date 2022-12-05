@@ -1,12 +1,12 @@
 name: $(Date:yyyy-MM-dd)$(Rev:.rr)
 
 pool:
-  vmImage: windows-2019
+  vmImage: windows-2022
 
 trigger:
   branches:
     include:
-      - master
+      - main
 
 stages:
   - stage: build
