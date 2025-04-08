@@ -1,6 +1,6 @@
 # Moss API Client for Soma FM
 
-[![Build Status](https://dev.azure.com/mossmoss/Moss.ApiClient.SomaFm/_apis/build/status/Moss.ApiClient.SomaFm?branchName=master)](https://dev.azure.com/mossmoss/Moss.ApiClient.SomaFm/_build/latest?definitionId=25&branchName=master)
+[![Build Status](https://dev.azure.com/mossmoss/Moss.ApiClient.SomaFm/_apis/build/status/Moss.ApiClient.SomaFm?branchName=main)](https://dev.azure.com/mossmoss/Moss.ApiClient.SomaFm/_build/latest?definitionId=25&branchName=main)
 [![NuGet](https://img.shields.io/nuget/v/Moss.ApiClient.SomaFm.svg?style=flat)](https://www.nuget.org/packages/Moss.ApiClient.SomaFm)
 
 An API client for Soma FM. Provides methods to retrive data about channels and recently played songs.
