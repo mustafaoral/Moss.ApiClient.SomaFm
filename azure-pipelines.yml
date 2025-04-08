@@ -3,6 +3,8 @@ name: $(Date:yyyy-MM-dd)$(Rev:.rr)
 pool:
   vmImage: windows-2022
 
+trigger: none
+
 stages:
   - stage: build
     displayName: build & test & package
