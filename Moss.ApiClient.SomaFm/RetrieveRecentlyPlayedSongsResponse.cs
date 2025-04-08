@@ -1,30 +1,29 @@
-﻿namespace Moss.ApiClient.SomaFm
+﻿namespace Moss.ApiClient.SomaFm;
+
+/// <summary>
+/// Represents the response to retrieve recently played songs
+/// </summary>
+public record RetrieveRecentlyPlayedSongsResponse : Response
 {
     /// <summary>
-    /// Represents the response to retrieve recently played songs
+    /// Retrieved songs
     /// </summary>
-    public record RetrieveRecentlyPlayedSongsResponse : Response
+    public RecentlyPlayedSong[] Songs { get; private set; }
+
+    internal static RetrieveRecentlyPlayedSongsResponse CreateSuccess(RecentlyPlayedSong[] songs)
     {
-        /// <summary>
-        /// Retrieved songs
-        /// </summary>
-        public RecentlyPlayedSong[] Songs { get; private set; }
-
-        internal static RetrieveRecentlyPlayedSongsResponse CreateSuccess(RecentlyPlayedSong[] songs)
+        return new RetrieveRecentlyPlayedSongsResponse
         {
-            return new RetrieveRecentlyPlayedSongsResponse
-            {
-                Success = true,
-                Songs = songs
-            };
-        }
+            Success = true,
+            Songs = songs
+        };
+    }
 
-        internal static RetrieveRecentlyPlayedSongsResponse CreateFailure(string message)
+    internal static RetrieveRecentlyPlayedSongsResponse CreateFailure(string message)
+    {
+        return new RetrieveRecentlyPlayedSongsResponse
         {
-            return new RetrieveRecentlyPlayedSongsResponse
-            {
-                ErrorMessage = message
-            };
-        }
+            ErrorMessage = message
+        };
     }
 }

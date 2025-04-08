@@ -1,4 +1,3 @@
-﻿namespace Moss.ApiClient.SomaFm.Dto
-{
-    internal record ChannelsDto(ChannelDto[] Channels);
-}
+﻿namespace Moss.ApiClient.SomaFm.Dto;
+
+internal record ChannelsDto(ChannelDto[] Channels);

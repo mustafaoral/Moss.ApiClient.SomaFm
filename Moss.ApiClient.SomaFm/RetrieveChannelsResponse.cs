@@ -1,30 +1,29 @@
-﻿namespace Moss.ApiClient.SomaFm
+﻿namespace Moss.ApiClient.SomaFm;
+
+/// <summary>
+/// Represents the response to retrieve channels
+/// </summary>
+public record RetrieveChannelsResponse : Response
 {
     /// <summary>
-    /// Represents the response to retrieve channels
+    /// Retrieved channels
     /// </summary>
-    public record RetrieveChannelsResponse : Response
+    public Channel[] Channels { get; private set; }
+
+    internal static RetrieveChannelsResponse CreateSuccess(Channel[] channels)
     {
-        /// <summary>
-        /// Retrieved channels
-        /// </summary>
-        public Channel[] Channels { get; private set; }
-
-        internal static RetrieveChannelsResponse CreateSuccess(Channel[] channels)
+        return new RetrieveChannelsResponse
         {
-            return new RetrieveChannelsResponse
-            {
-                Success = true,
-                Channels = channels
-            };
-        }
+            Success = true,
+            Channels = channels
+        };
+    }
 
-        internal static RetrieveChannelsResponse CreateFailure(string message)
+    internal static RetrieveChannelsResponse CreateFailure(string message)
+    {
+        return new RetrieveChannelsResponse
         {
-            return new RetrieveChannelsResponse
-            {
-                ErrorMessage = message
-            };
-        }
+            ErrorMessage = message
+        };
     }
 }

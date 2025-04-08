@@ -12,6 +12,7 @@
     <PackageDescription>Extensions for Soma FM API Client.</PackageDescription>
     <NeutralLanguage>en-GB</NeutralLanguage>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <ImplicitUsings>true</ImplicitUsings>
   </PropertyGroup>
 
   <ItemGroup>

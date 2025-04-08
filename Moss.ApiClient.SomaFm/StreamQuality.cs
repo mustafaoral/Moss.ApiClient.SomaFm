@@ -1,23 +1,22 @@
-﻿namespace Moss.ApiClient.SomaFm
+﻿namespace Moss.ApiClient.SomaFm;
+
+/// <summary>
+/// Represents playlist quality
+/// </summary>
+public enum StreamQuality
 {
     /// <summary>
-    /// Represents playlist quality
+    /// Low
     /// </summary>
-    public enum StreamQuality
-    {
-        /// <summary>
-        /// Low
-        /// </summary>
-        Low,
+    Low,
 
-        /// <summary>
-        /// High
-        /// </summary>
-        High,
+    /// <summary>
+    /// High
+    /// </summary>
+    High,
 
-        /// <summary>
-        /// Highest
-        /// </summary>
-        Highest
-    }
+    /// <summary>
+    /// Highest
+    /// </summary>
+    Highest
 }

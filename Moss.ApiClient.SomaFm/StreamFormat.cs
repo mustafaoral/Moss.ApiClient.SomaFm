@@ -1,23 +1,22 @@
-﻿namespace Moss.ApiClient.SomaFm
+﻿namespace Moss.ApiClient.SomaFm;
+
+/// <summary>
+/// Represents playlist format
+/// </summary>
+public enum StreamFormat
 {
     /// <summary>
-    /// Represents playlist format
+    /// mp3
     /// </summary>
-    public enum StreamFormat
-    {
-        /// <summary>
-        /// mp3
-        /// </summary>
-        Mp3,
+    Mp3,
 
-        /// <summary>
-        /// AAC
-        /// </summary>
-        Aac,
+    /// <summary>
+    /// AAC
+    /// </summary>
+    Aac,
 
-        /// <summary>
-        /// aacPlus
-        /// </summary>
-        Aacp
-    }
+    /// <summary>
+    /// aacPlus
+    /// </summary>
+    Aacp
 }
